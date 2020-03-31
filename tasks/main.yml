@@ -1,0 +1,11 @@
+---
+# tasks file for wp-cli
+- name: Download wp-cli to specified folder
+  become: yes
+  get_url:
+    url: "{{ wp_cli_phar_url }}"
+    dest: "{{ wp_cli_install_location }}/wp"
+    mode: '555'
+    owner: root
+    group: root
+    force: "{{ wp_cli_force_replacement|bool }}"

@@ -1,0 +1,5 @@
+---
+# defaults file for wp-cli
+wp_cli_install_location: "/usr/local/bin"
+wp_cli_phar_url: "https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar"
+wp_cli_force_replacement: "no"
